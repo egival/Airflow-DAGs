@@ -6,7 +6,6 @@ from airflow.models import Variable
 
 DATASETS_PATH = '/home/egidija1/airflow/insurance.csv'
 OUTPUT_PATH = '/home/egidija1/airflow/output/{0}.csv'
-#{0} - is a place holder. The name of output document will be saved later
 
 def read_csv_file():
     df = pd.read_csv(DATASETS_PATH)
