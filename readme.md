@@ -3,7 +3,7 @@
 This repository contains a collection of Airflow DAGs that I've built while following tutorials from Astronomer Academy and LinkedIn Learning. Some DAGs have been modified to explore concepts further/fixing small mistakes. All DAGs have been tested locally using the Airflow UI.
 
 Explored concepts:
-* As at the very beginning decorators syntax was not not very easy to understand, I rewrote Astronomer's [DAG](https://academy.astronomer.io/path/airflow-101/astro-runtime-xcoms-101/1189671) using traditional syntax which requires explicit retrieval of XCom values using the pull method. This is in contrast to decorator syntax, which may handle XCom transfers implicitly. 
+* As at the very beginning decorators syntax was not not very easy to understand, I rewrote Astronomer's [DAG](https://academy.astronomer.io/path/airflow-101/astro-runtime-xcoms-101/1189671) using traditional syntax which requires explicit retrieval of XCom values using the pull method. This is in contrast to decorator syntax, which may handle XCom transfers implicitly.
 Please refer to Airflow_DAGs\Intermediate_dags\Xcom_PyOp_Pull.py
 
 Corrections made:
@@ -11,7 +11,7 @@ Corrections made:
 
 Other observations:
 * The LinkedIn Learnings instructor uses Xcoms to pass a dataframe containing 1350 records. However, this is not recommended in Airflow documentation as Xcoms are designed for small amounts of data. 
-Example: Intermediate_dags\Branched_DAGs\Linkedin_courses\branching_with_variables.py
+Please refer to: Intermediate_dags\Branched_DAGs\Linkedin_courses\branching_with_variables.py
 
 **Structure:**
 
