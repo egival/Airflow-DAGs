@@ -9,7 +9,7 @@ with DAG(
     description="DAG to check data",
     tags=['data engineering'],
     start_date=datetime(2023,1,1),
-    schedule = '@daily', #everytime at midnight
+    schedule = '@daily', 
     catchup=False,
     default_args={
         'owner':'egi'
